@@ -2,6 +2,8 @@ import Image from 'next/image'
 import logo from '@/images/logo.svg'
 import heroMobile from '@/images/hero-mobile.jpg'
 import heroDesktop from '@/images/hero-desktop.jpg'
+import error from '@/images/icon-error.svg'
+import arrow from '@/images/icon-arrow.svg'
 
 export default function Home() {
   return (
@@ -9,10 +11,7 @@ export default function Home() {
      
 <div className="flex">
   <Image src={logo} alt={''}/>
-  <div className="flex flex-col">
-    <p>Base</p>
-    <p>Apprel</p>
-  </div>
+
 </div>
 
 <Image src={heroMobile} alt={''}/>
@@ -23,7 +22,9 @@ export default function Home() {
 
 <p className="">Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
 <div className=" flex">
-  <input type="email"  className=' rounded-lg'/>
+  <input type="email"  className=' rounded-lg outline-none'/>
+  <Image src={arrow} alt={''}/>
+
 </div>
     </main>
   )
